@@ -6,6 +6,6 @@ class Movie < ApplicationRecord
   end
 
   def self.released
-    where("released_on <= ?", Date.today).order("released_on desc")
+    where('released_on <= ?', Date.today).order('released_on desc')
   end
 end
