@@ -7,7 +7,7 @@ class Review < ApplicationRecord
 
   validates :comment, length: { minimum: 25 }
 
-  STARS = [1,2,3,4,5]
+  STARS = [1, 2, 3, 4, 5].freeze
 
   validates :stars, inclusion: { in: STARS }
 
