@@ -31,6 +31,6 @@ class Movie < ApplicationRecord
   end
 
   def average_stars_as_percent
-    (self.average_stars / 5.0) * 100
+    (average_stars / 5.0) * 100
   end
 end
